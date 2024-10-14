@@ -1,0 +1,66 @@
+/* src/components/menu.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding: 10px 20px;
+    background-color: white; /* Fondo negro */
+    color: black; /* Texto blanco */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .menu-logo {
+    font-size: 20px;
+    font-style: italic;
+  }
+  
+  .menu-nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menu-link {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-link:hover {
+    background-color: #444; /* Fondo gris oscuro al hacer hover */
+    color: white;
+    border-radius: 7px;
+  }
+  
+  .menu-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .menu-icon {
+    font-size: 17px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-icon:hover {
+    color: #ddd;
+  }
+  
+  main {
+    margin-top: 60px; /* Margen superior para evitar que el contenido quede detrás del menú */
+  }
+  

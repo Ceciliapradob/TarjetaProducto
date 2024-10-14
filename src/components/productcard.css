@@ -1,0 +1,170 @@
+/* src/components/productCard.css */
+.productCardPadre {
+  width: 75%;
+
+  margin: auto;
+  margin-left: 23%;
+  margin-top: 1%;
+}
+
+.product-card {
+  display: flex;
+  /* Usar flexbox para la disposición */
+  justify-content: center;
+  /* Centrar el contenido horizontalmente */
+  align-items: center;
+  /* Centrar el contenido verticalmente */
+  padding: 15px;
+  background-color: #e9e5e58c;
+  /* Fondo claro para la tarjeta */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra para efecto de profundidad */
+  max-width: 1200px;
+  /* Ancho máximo de la tarjeta */
+  margin: auto;
+  /* Centrar la tarjeta en la página */
+}
+
+.product-images {
+  display: flex;
+  /* Usar flexbox para la disposición vertical */
+  flex-direction: column;
+  /* Colocar imágenes en columna */
+  gap: 10px;
+  /* Espaciado entre las imágenes */
+}
+
+.product-thumbnail {
+  width: 80px;
+  /* Ancho de las miniaturas */
+  height: 80px;
+  /* Alto de las miniaturas */
+  object-fit: cover;
+  /* Mantener la proporción de las imágenes */
+  cursor: pointer;
+  /* Cambiar el cursor al pasar el ratón */
+  border: 2px solid transparent;
+  /* Bordes invisibles para interacciones */
+  transition: border 0.3s ease;
+  /* Transición para bordes */
+}
+
+.product-thumbnail:hover {
+  border: 2px solid #007bff;
+  /* Bordes visibles al pasar el ratón */
+}
+
+.product-image {
+  width: 400px;
+  /* Ancho de la imagen principal */
+  height: auto;
+  /* Alto automático para mantener la proporción */
+  margin: 0 23px;
+  /* Espaciado lateral */
+}
+
+.product-details {
+  display: flex;
+  /* Usar flexbox para la disposición */
+  flex-direction: column;
+  /* Colocar detalles en columna */
+  align-items: flex-start;
+  /* Alinear a la izquierda */
+  /* gap: 2; */
+}
+
+.product-title {
+  font-size: 24px;
+  /* Tamaño del título */
+  margin-bottom: 10px;
+  /* Espaciado inferior */
+}
+
+.product-price {
+  font-size: 20px;
+  /* Tamaño del precio */
+  margin-bottom: 10px;
+  /* Espaciado inferior */
+}
+
+.product-color,
+.product-size {
+  margin: 10px 0;
+  /* Espaciado superior e inferior */
+}
+
+.color-options,
+.size-options {
+  display: flex;
+  /* Usar flexbox para la disposición */
+  gap: 10px;
+  /* Espaciado entre opciones */
+}
+
+.color-option,
+.size-option {
+  width: 30px;
+  /* Ancho de las opciones de color y talla */
+  height: 30px;
+  /* Alto de las opciones */
+  border-radius: 50%;
+  /* Hacer que sean círculos */
+  border: 1px solid #ccc;
+  /* Borde gris claro */
+  display: flex;
+  /* Usar flexbox para centrar */
+  align-items: center;
+  /* Centrar verticalmente */
+  justify-content: center;
+  /* Centrar horizontalmente */
+  cursor: pointer;
+  /* Cambiar el cursor al pasar el ratón */
+}
+
+.size-option {
+  background-color: #eee;
+  /* Fondo claro para las opciones de tamaño */
+  border-radius: 5px;
+  /* Bordes redondeados */
+}
+
+.quantity-controls {
+  display: flex;
+  /* Usar flexbox para la disposición */
+  align-items: center;
+  /* Centrar verticalmente */
+  margin-bottom: 2%;
+  gap: 10px;
+  /* Espaciado entre elementos */
+}
+
+.quantity-controls button {
+  padding: 5px 10px;
+  /* Espaciado interno */
+  cursor: pointer;
+  /* Cambiar el cursor al pasar el ratón */
+}
+
+.add-to-cart {
+  background-color: red;
+  /* Fondo rojo para el botón */
+  color: white;
+  /* Texto blanco */
+  padding: 10px;
+  /* Espaciado interno */
+  border: none;
+  /* Sin borde */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambiar el cursor al pasar el ratón */
+  transition: background-color 0.3s ease;
+  /* Transición para el color de fondo */
+}
+
+.add-to-cart:hover {
+  background-color: darkred;
+  /* Cambio de color al pasar el ratón */
+}
