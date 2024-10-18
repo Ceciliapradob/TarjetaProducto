@@ -3,7 +3,9 @@
   width: 75%;
   margin-left: 23%;
   margin-bottom: 5%;
+  margin-top: 2%;
   padding-bottom: 10px;
+
 
 }
 
@@ -169,4 +171,91 @@
 .add-to-cart:hover {
   background-color: darkred;
   /* Cambio de color al pasar el ratón */
+}
+
+
+
+/* src/components/productCard.css */
+
+/* Mobile */
+@media (max-width: 768px) {
+  .productCardPadre {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .product-card {
+    flex-direction: column; /* Hacer que los elementos se apilen */
+    align-items: center; /* Centrar todo el contenido */
+    padding: 15px;
+  }
+
+  .product-images {
+    flex-direction: row; /* Mostrar imágenes en fila en lugar de columna */
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .product-thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+
+  .product-image {
+    width: 250px; /* Ajustar el tamaño de la imagen principal */
+  }
+
+  .product-title, .product-price {
+    font-size: 18px; /* Reducir el tamaño del texto */
+  }
+
+  .color-option, .size-option {
+    width: 25px;
+    height: 25px;
+  }
+
+  .quantity-controls button {
+    padding: 5px 8px;
+  }
+
+  .add-to-cart {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .productCardPadre {
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
+  .product-card {
+    flex-direction: column; /* También en columna para tablet */
+    padding: 20px;
+  }
+
+  .product-image {
+    width: 300px; /* Ajustar el tamaño en tablet */
+  }
+
+  .product-thumbnail {
+    width: 70px;
+    height: 70px;
+  }
+
+  .product-title, .product-price {
+    font-size: 20px; /* Un poco más grande que en mobile */
+  }
+
+  .color-option, .size-option {
+    width: 28px;
+    height: 28px;
+  }
+
+  .add-to-cart {
+    padding: 10px;
+    font-size: 16px;
+  }
 }

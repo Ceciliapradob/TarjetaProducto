@@ -64,3 +64,57 @@ html, body {
     margin-top: 60px; /* Margen superior para evitar que el contenido quede detrás del menú */
   }
   
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Los elementos se apilan en columna */
+    justify-content: center; /* Centrar todos los elementos */
+    align-items: center;
+    padding: 15px; /* Aumentar un poco el padding */
+  }
+
+  .menu-logo {
+    font-size: 18px;
+    margin-bottom: 10px; /* Añadir espacio entre logo y enlaces */
+  }
+
+  .menu-nav {
+    flex-direction: column; /* Los enlaces en columna */
+    gap: 15px; /* Espacio entre los enlaces */
+  }
+
+  .menu-link {
+    font-size: 14px; /* Ajustar el tamaño de fuente en mobile */
+    padding: 10px 15px; /* Más espacio para que sea fácil tocar en pantallas táctiles */
+  }
+
+  .menu-icons {
+    margin-top: 10px; /* Separar los íconos de los enlaces */
+    gap: 20px; /* Espacio adicional entre los íconos */
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menu {
+    padding: 10px 20px;
+    justify-content: space-between; /* Mantener distribución horizontal */
+  }
+
+  .menu-logo {
+    font-size: 20px; /* Ajustar tamaño del logo */
+  }
+
+  .menu-nav {
+    gap: 20px; /* Menos espacio entre enlaces */
+  }
+
+  .menu-link {
+    font-size: 16px; /* Ajustar el tamaño de los enlaces */
+  }
+
+  .menu-icons {
+    gap: 15px;
+  }
+}
